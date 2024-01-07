@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <h1 id="title">SURVEY FORM</h1>
+    <p id="description">Thank you for giving us your time</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Enter full name: <input placeholder="Name" required id="name" type="text" class="input-box field" /></label>
+        <label id="email-label">Enter email: <input placeholder="Mail" required id="email" type="email" class="input-box field"/></label>
+        <label id="number-label">Enter age: <input placeholder="Number" id="number" min="3" max="100" type="number" class="input-box" /></label>
+      </fieldset>
+      <fieldset>
+        <legend>Which continent are you from:</legend>
+        <select class="input-box" id="dropdown">
+            <option>select</option>
+            <option>Africa</option>
+            <option>Antarctica</option>
+            <option>Asia</option>
+            <option>Australia</option>
+            <option>Europe</option>
+            <option>North America</option>
+            <option>South America</option>
+          </select>
+      </fieldset>
+      <fieldset>
+        <legend>Select your gender: </legend>
+        <div id="gender">
+          <label><input name="gender" value="male" type="radio" /> <span>Male</span></label>
+          <label><input name="gender" value="female" type="radio" /> <span>Female</span></label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>What genre of books do you prefer to read: </legend>
+        <div id="genre">
+          <label class="genre"><input type="checkbox" value="t"/>Fantasy</label>
+          <label class="genre"><input type="checkbox" value="t"/>Science Fiction</label>
+          <label class="genre"><input type="checkbox" value="t"/>Mystery</label>
+          <label class="genre"><input type="checkbox" value="t"/>Documentary</label>
+          <label class="genre"><input type="checkbox" value="t"/>Romance</label>
+          <label class="genre"><input type="checkbox" value="t"/>Horror</label>
+          <label class="genre"><input type="checkbox" value="t"/>Thriller</label>
+        </div>
+      </fieldset>
+      <label>Any feedback you want to give? (optional)<textarea></textarea></label>
+      <input id="submit" type="submit">
+    </form>
+  </body>
+</html>
